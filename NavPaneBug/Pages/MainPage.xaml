@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="NavPaneBug.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:NavPaneBug"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:muxcontrols="using:Microsoft.UI.Xaml.Controls"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    NavigationCacheMode="Enabled"
+    mc:Ignorable="d">
+
+    <Grid>
+        <muxcontrols:NavigationView x:Name="Navigation">
+            <muxcontrols:NavigationView.MenuItems>
+                <muxcontrols:NavigationViewItem Content="Menu Item1" Icon="Play" />
+                <muxcontrols:NavigationViewItem Content="Menu Item2" Icon="Save" />
+                <muxcontrols:NavigationViewItem Content="Menu Item3" Icon="Refresh" />
+                <muxcontrols:NavigationViewItem Content="Menu Item4" Icon="Download" />
+            </muxcontrols:NavigationView.MenuItems>
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Button
+                    Content="Click me"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Click="OnClick" />
+            </Grid>
+        </muxcontrols:NavigationView>
+    </Grid>
+</Page>
