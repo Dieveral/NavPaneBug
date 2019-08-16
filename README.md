@@ -1,5 +1,5 @@
 # NavPaneBug
-Demo project for bug: NavigationView pane don't open after navigating to page with enabled cache
+Demo project for bug: NavigationView pane doesn't open after navigating to page with enabled cache
 
 MainPage has NavigationView control. NavigationCacheMode of MainPage is Enabled. Button "Click me" navigates to ViewerPage. You can navigate back to MainPage from ViewerPage.
 
