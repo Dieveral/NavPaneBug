@@ -10,8 +10,6 @@ Scenario to reproduce bug:
 4. Click return button in top-left corner to navigate to MainPage;
 5. Open NavigationView pane by clicking Menu button.
 
-Pane should open but sometimes pane is drawn like closed (pane is Visible but it looks like it is cutted or right panel of NavigationView with content is over it).
-Property "IsPaneOpen" of NavigationView is true. Next click closes the pane, and the next one opens the pane.
-If you didn't get such behavior, you can repeat steps 2-5 untill you will get it.
+Pane should open but sometimes pane is drawn like closed (pane is open but it looks like it is cut or right panel of NavigationView with content is over it). NavigationView property IsPaneOpen has value "true". Next click closes the pane, and the next one opens the pane. If you didn't get such behavior, you can repeat steps 2-5 until you will get it.
 
 Problem only acuares after navigating back to MainPage with NavigationView that has DisplayMode property set to "Expanded" and IsPaneOpen property set to "false". It seems that this bug is related to page's cache.
